@@ -1,2 +1,2 @@
-# Markdown_to_HTML
+# Markdown to HTML
 A software wich convert Markdown to HTML
