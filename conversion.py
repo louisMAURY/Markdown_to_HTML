@@ -108,7 +108,6 @@ def a_lien():
                 print("C'EST UN LIIIIIIIIIIIIIIEEEEEN")
 
 
-
 a_title()
 a_list()
 a_italic_bold()

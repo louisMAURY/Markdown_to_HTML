@@ -1,25 +1,26 @@
 import sys
+from argparse import *
 
-def lire_ecrire():
+parser = ArgumentParser(description="select directory")
+parser.add_argument("--input-directory" , "-i" , metavar = "" , help = "select an input folder")
+parser.add_argument("--output-directory" , "-o" , metavar = "" , help ="select an output folder")
 
-    mark = open("markdown.md" , "r")
-    contenu = mark.read()
+args = parser.parse_args()
+print(args)
 
-    html = open("fichier.html" , "w")
-    html.write(contenu)
 
-    html.close()
-    mark.close()
 
-    html_lu = open("fichier.html" , "r")
-    print(html_lu.read())
-    html_lu.close()
+
+
+
+
+
 
 # The fonction read...just read the file
-def read(fileuh):
+def lire(fileuh):
     with open(fileuh , "r") as markdown:
         contents = markdown.read()
         return contents
         print(contents)
-
-read(sys.argv[1]) # Pour selectionner le fichier
+liste = sys.argv[:]
+print(liste)
