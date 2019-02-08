@@ -1,5 +1,6 @@
 import sys
 from argparse import *
+from analysis import *
 
 parser = ArgumentParser(description="select directory")
 parser.add_argument("--input-directory" , "-i" , metavar = "" , help = "select an input folder")
@@ -8,19 +9,13 @@ parser.add_argument("--output-directory" , "-o" , metavar = "" , help ="select a
 args = parser.parse_args()
 print(args)
 
+folder_md = args.input_directory
+folder_html = args.output_directory
 
 
-
-
-
-
-
-
-# The fonction read...just read the file
-def lire(fileuh):
-    with open(fileuh , "r") as markdown:
-        contents = markdown.read()
-        return contents
-        print(contents)
-liste = sys.argv[:]
-print(liste)
+if folder_md:
+    readeuh(folder_md)
+    a_title()
+    a_list()
+    a_italic_bold()
+    a_lien()
