@@ -14,8 +14,9 @@ folder_html = args.output_directory
 
 
 if folder_md:
-    readeuh(folder_md)
+    fiche = folder_md
+    readeuh(fiche)
     a_title()
     a_list()
     a_italic_bold()
-    a_lien()
+    a_link()

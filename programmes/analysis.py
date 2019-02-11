@@ -6,7 +6,7 @@ def readeuh(fileuh):
         return contents
 
 
-# The fonction say the level of the title
+# The function say the level of the title
 def a_title():
     readeuh(fichier)
     for element in contents:
@@ -45,7 +45,7 @@ def a_title():
             #h6()
             print("TITRE DE NIV 6")
 
-
+# The function say if their is a list
 def a_list():
     readeuh(fichier)
     for element in contents:
@@ -59,7 +59,7 @@ def a_list():
             #ul_li()
             print("Y'A UNE LISTE ICI")
 
-
+# The function say if their is an important part text and the type of the program
 def a_italic_bold():
     readeuh(fichier)
     for element in contents:
@@ -91,8 +91,8 @@ def a_italic_bold():
             #bold()
             print("Gras aussi")
             
-
-def a_lien():
+# The function say if their is a link
+def a_link():
     readeuh(fichier)
     for element in contents:
         counter = 0
@@ -106,9 +106,7 @@ def a_lien():
             if cara == ")":
                 counter += 1
                 
-            
         # link
         if counter == 4:
             # link()
-            print("C'EST UN LIIIIIIIIIIIIIIEEEEEN")
-
+            print("C'EST UN LIEN")
