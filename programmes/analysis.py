@@ -1,3 +1,7 @@
+from conding_htm import *
+
+fileuh = "markdown.md"
+fichier = "markdown.md"
 # The fonction read...just read the file
 def readeuh(fileuh):
     with open(fileuh , "r") as markdown:
@@ -17,12 +21,12 @@ def a_title():
 
         # Title level 1
         if counter == 1:
-            #h1()
+            h1(element)
             print("TITRE DE NIV 1")
 
         # Title level 2
         elif counter == 2:
-            #h2()
+            h2(element)
             print("TITRE DE NIV 2")
 
         # Title level 3    
@@ -110,3 +114,10 @@ def a_link():
         if counter == 4:
             # link()
             print("C'EST UN LIEN")
+
+
+
+a_title()
+a_list()
+a_italic_bold()
+a_link()
