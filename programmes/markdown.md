@@ -10,10 +10,10 @@
 
 *italique*
 
-_italique2_
+_italique 2_
 
 **gras**
 
-__gras2__
+__gras 2__
 
 [label](lien.com)

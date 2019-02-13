@@ -31,22 +31,22 @@ def a_title():
 
         # Title level 3    
         elif counter == 3:
-            #h3()
+            h3(element)
             print("TITRE DE NIV 3")
 
         # Title level 4
         elif counter == 4:
-            #h4()
+            h4(element)
             print("TITRE DE NIV 4")
 
         # Title level 5
         elif counter == 5:
-            #h5()
+            h5(element)
             print("TITRE DE NIV 5")
 
         # Title level 6
         elif counter == 6:
-            #h6()
+            h6(element)
             print("TITRE DE NIV 6")
 
 # The function say if their is a list
@@ -77,22 +77,22 @@ def a_italic_bold():
             
         # *Italique* word        
         if counter_star == 2:
-            #italic()
+            italic(element , "*")
             print("C'est un mot italique")
             
         # **Bold** word
         elif counter_star == 4:
-            #bold()
+            bold(element , "**")
             print("C'est un mot gras")
             
         # _italique_ word
         if counter_under == 2:
-            #italic()
+            italic(element , "_")
             print("Italique aussi")
             
         # __bold__ word
         elif counter_under == 4:
-            #bold()
+            bold(element , "__")
             print("Gras aussi")
             
 # The function say if their is a link
@@ -112,7 +112,7 @@ def a_link():
                 
         # link
         if counter == 4:
-            # link()
+            link(element)
             print("C'EST UN LIEN")
 
 
