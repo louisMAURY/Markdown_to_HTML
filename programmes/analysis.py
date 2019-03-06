@@ -49,20 +49,6 @@ def a_title():
             h6(element)
             print("TITRE DE NIV 6")
 
-# The function say if their is a list
-def a_list():
-    readeuh(fichier)
-    for element in contents:
-        counter = 0
-        for cara in element:
-            if cara =="-":
-                counter = 1
-            
-        # Unordered list
-        if counter == 1:
-            #ul_li()
-            print("Y'A UNE LISTE ICI")
-
 # The function say if their is an important part text and the type of the program
 def a_italic_bold():
     readeuh(fichier)
@@ -115,9 +101,21 @@ def a_link():
             link(element)
             print("C'EST UN LIEN")
 
-
+# The function say if their is a list
+def a_list():
+    readeuh(fichier)
+    for element in contents:
+        counter = 0
+        for cara in element:
+            if cara =="-":
+                counter = 1
+            
+        # Unordered list
+        if counter == 1:
+            ul_li(element)
+            print("Y'A UNE LISTE ICI")
 
 a_title()
-a_list()
 a_italic_bold()
 a_link()
+a_list()

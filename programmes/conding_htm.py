@@ -145,3 +145,32 @@ def link(connection):
         final_form = "".join(form_list)
 
         htm_file.write(final_form)
+
+def ul_li(roster):
+
+    with open("fichier.html" , "a") as htm_file:
+        sorting = roster
+        cont = sorting.split("-")
+        cont[0] = "<li>"
+        cont.append("</li>")
+        print(cont)
+
+
+'''
+    with open("fichier.html" , "a") as htm_file:
+        sorting = title_lv5
+        cont = sorting.split("#")
+        useless = "".join(cont)
+        matter = useless.split("\n")
+        matter[1] = matter[0]
+        matter[0] = "<h5>"
+        matter.append("</h5>")
+        matter.append("\n")
+        tenor = "".join(matter)
+        
+        htm_file.write(tenor)
+'''
+        #<ul>\n
+        #    <li>Blue cheese</li>\n
+        #    <li>Feta</li>\n
+        #</ul>
