@@ -1,7 +1,9 @@
+catalog = "fichier.html"
+
 # The function write in HTML the title which has a level 1 title
 def h1(title_lv1):
 
-    with open("fichier.html" , "a") as htm_file:
+    with open(catalog , "a") as htm_file:
         sorting = title_lv1
         cont = sorting.split("#")
         useless = "".join(cont)
@@ -151,25 +153,30 @@ def ul_li(roster):
     with open("fichier.html" , "a") as htm_file:
         sorting = roster
         cont = sorting.split("-")
-        cont[0] = "<li>"
-        cont.append("</li>")
+        init = ['0']*6
+        ul = cont + init
+        # if 
+        # cont[0] = "<li>"
+        # cont.append("</li>")
+        print(init)
         print(cont)
+        print(ul)
 
 
-'''
-    with open("fichier.html" , "a") as htm_file:
-        sorting = title_lv5
-        cont = sorting.split("#")
-        useless = "".join(cont)
-        matter = useless.split("\n")
-        matter[1] = matter[0]
-        matter[0] = "<h5>"
-        matter.append("</h5>")
-        matter.append("\n")
-        tenor = "".join(matter)
+
+#     with open("fichier.html" , "a") as htm_file:
+#         sorting = title_lv5
+#         cont = sorting.split("#")
+#         useless = "".join(cont)
+#         matter = useless.split("\n")
+#         matter[1] = matter[0]
+#         matter[0] = "<h5>"
+#         matter.append("</h5>")
+#         matter.append("\n")
+#         tenor = "".join(matter)
         
-        htm_file.write(tenor)
-'''
+#         htm_file.write(tenor)
+
         #<ul>\n
         #    <li>Blue cheese</li>\n
         #    <li>Feta</li>\n

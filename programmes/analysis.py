@@ -106,14 +106,22 @@ def a_list():
     readeuh(fichier)
     for element in contents:
         counter = 0
+        # print(element)
+        # print(contents)
+
         for cara in element:
-            if cara =="-":
-                counter = 1
-            
-        # Unordered list
-        if counter == 1:
-            ul_li(element)
+            if cara == "-":
+                counter += 1
+
+        if counter == 2:
+            ul_li(contents)
             print("Y'A UNE LISTE ICI")
+
+    # if element != "-":
+    #     print(element)
+        # ul_li(contents)
+
+
 
 a_title()
 a_italic_bold()
